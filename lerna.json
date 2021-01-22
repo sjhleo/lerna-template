@@ -1,0 +1,7 @@
+{
+    "packages": ["packages/component-demo"],
+    "publishConfig": {
+        "ignore": ["ignored-file", "*.md"]
+    },
+    "version": "independent"
+}

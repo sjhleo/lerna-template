@@ -1,0 +1,34 @@
+{
+    "extends": "../tsconfig.settings.json",
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "es5",
+        "moduleResolution": "node",
+        "stripInternal": true,
+        "pretty": true,
+        "noImplicitAny": false,
+        "noImplicitThis": true,
+        "noImplicitReturns": false,
+        "noUnusedLocals": true,
+        "strictNullChecks": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "noEmitHelpers": false,
+        "declarationDir": "./dist/types",
+        "lib": ["dom", "es5", "es2015.promise"],
+        "baseUrl": "./",
+        "paths": {
+            "*": ["types/*"],
+            "@p/*": ["../../packages/*"],
+            "@/*": ["src/*"]
+        }
+    },
+    "include": ["src/**/*.ts"],
+    "linterOptions": {
+        "exclude": ["node_modules/**"]
+    },
+    "exclude": ["node_modules/**"]
+}

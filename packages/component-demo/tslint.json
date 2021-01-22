@@ -1,0 +1,7 @@
+{
+    "defaultSeverity": "warning",
+    "rules":{
+        "interface-name":false,
+        "eofline":false
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "lerna-template",
+    "version": "1.0.0",
+    "scripts": {
+        "dist": "lerna run dist",
+        "build": "lerna run build"
+    },
+    "devDependencies": {
+        "lerna": "^3.20.2"
+    }
+}
