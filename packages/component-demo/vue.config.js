@@ -40,7 +40,12 @@ module.exports = {
     },
     //调整 webpack 配置 https://cli.vuejs.org/zh/guide/webpack.html#%E7%AE%80%E5%8D%95%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F
     configureWebpack: config => {
-        config.externals = {};
+        config.externals = {
+            // 自己看情况加
+            "vue-property-decorator": "vue-property-decorator",
+            "vue": "vue",
+            "vue-class-component": "vue-class-component"
+        };
     },
     css: {
         // 启用 CSS modules
@@ -61,13 +66,5 @@ module.exports = {
 				`
             }
         }
-    },
-    // webpack-dev-server 相关配置 https://webpack.js.org/configuration/dev-server/
-    devServer: {
-        host: "0.0.0.0",
-        port: 8000, // 端口号
-        https: false, // https:{type:Boolean}
-        open: true, //配置自动启动浏览器  http://172.16.1.12:7071/rest/mcdPhoneBar/
-        hotOnly: true // 热更新
     }
 };
